@@ -1,0 +1,12 @@
+C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\MudGame.csproj.AssemblyReference.cache
+C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\MudGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\MudGame.AssemblyInfoInputs.cache
+C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\MudGame.AssemblyInfo.cs
+C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\MudGame.csproj.CoreCompileInputs.cache
+C:\GODOT\MUDGAME\.godot\mono\temp\bin\Debug\MudGame.deps.json
+C:\GODOT\MUDGAME\.godot\mono\temp\bin\Debug\MudGame.dll
+C:\GODOT\MUDGAME\.godot\mono\temp\bin\Debug\MudGame.pdb
+C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\MudGame.dll
+C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\refint\MudGame.dll
+C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\MudGame.pdb
+C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\ref\MudGame.dll

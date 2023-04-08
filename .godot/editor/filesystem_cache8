@@ -1,0 +1,10 @@
+2a60927148abd1d33b818b535e306557
+::res://::1680903476
+default_env.tres::Environment::3733367034473498407::1680903476::0::1::::<><>::
+icon.png::CompressedTexture2D::1067983580540156630::1680894021::1680899012::1::::<><>::
+zph1_fr2.png::::-1::1680902567::0::0::::<><>::
+::res://Scenes/::1680903476
+LineEdit.cs::CSharpScript::-1::1680899401::0::1::::<><>::
+Node2D.cs::CSharpScript::-1::1680903473::0::1::::<><>::
+Node2D.tscn::PackedScene::3152045697652163342::1680903476::0::1::::<><>::res://Scenes/Node2D.cs<>res://Scenes/LineEdit.cs<>res://Scenes/Sprite2D.cs<>uid://phlse1e5j27c
+Sprite2D.cs::CSharpScript::-1::1680903025::0::1::::<><>::
