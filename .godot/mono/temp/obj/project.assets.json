@@ -88,38 +88,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kriez\\.nuget\\packages\\": {},
-    "C:\\Users\\Kriez\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\KRiez\\.nuget\\packages\\": {},
+    "C:\\Users\\KRiez\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GODOT\\MUDGAME\\MudGame.csproj",
+      "projectUniqueName": "C:\\GODOT\\GODOTGAME\\MudGame.csproj",
       "projectName": "MudGame",
-      "projectPath": "C:\\GODOT\\MUDGAME\\MudGame.csproj",
-      "packagesPath": "C:\\Users\\Kriez\\.nuget\\packages\\",
-      "outputPath": "C:\\GODOT\\MUDGAME\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "C:\\GODOT\\GODOTGAME\\MudGame.csproj",
+      "packagesPath": "C:\\Users\\KRiez\\.nuget\\packages\\",
+      "outputPath": "C:\\GODOT\\GODOTGAME\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Users\\Kriez\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Users\\KRiez\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kriez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Users\\Kriez\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        "C:\\Users\\KRiez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KRiez\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -167,7 +160,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

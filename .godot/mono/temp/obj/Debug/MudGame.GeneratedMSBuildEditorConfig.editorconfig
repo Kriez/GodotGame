@@ -1,5 +1,5 @@
 is_global = true
-build_property.GodotProjectDir = C:\GODOT\MUDGAME\
+build_property.GodotProjectDir = C:\Godot\GodotGame\
 build_property.GodotProjectDirBase64 = 
 build_property.GodotSourceGenerators = 
 build_property.IsGodotToolsProject = 
@@ -12,4 +12,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MudGame
-build_property.ProjectDir = C:\GODOT\MUDGAME\
+build_property.ProjectDir = C:\Godot\GodotGame\
