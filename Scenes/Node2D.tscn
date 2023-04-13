@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bk54y5ljia7x7"]
+[gd_scene load_steps=4 format=3 uid="uid://bk54y5ljia7x7"]
 
 [ext_resource type="Script" path="res://Scenes/Node2D.cs" id="1"]
 [ext_resource type="Script" path="res://Scenes/LineEdit.cs" id="2"]
+[ext_resource type="Script" path="res://Scenes/Enemy.cs" id="3_etjmn"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1")
@@ -19,5 +20,8 @@ offset_right = 1031.0
 offset_bottom = 518.0
 bbcode_enabled = true
 scroll_following = true
+
+[node name="Enemy" type="Node2D" parent="."]
+script = ExtResource("3_etjmn")
 
 [connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]

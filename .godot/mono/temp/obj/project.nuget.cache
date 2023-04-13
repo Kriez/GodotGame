@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tf/KZY8mfPjYU2AMPmrLJnWInyjTA4RO2R0HbVLN9IiiENAS1uDmBWsvfzmwGtEt4jz0DsQove9Yji87Vm1W2Q==",
+  "dgSpecHash": "ngh72OX6eyx51SYpnRJFWA8rn8sZoxdvmjUyJBE/Gs5cCJFI9f2OjylGtDbal2usxEIxuhl8906NJhzJUkPlog==",
   "success": true,
   "projectFilePath": "C:\\Godot\\GodotGame\\MudGame.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\KRiez\\.nuget\\packages\\godot.sourcegenerators\\4.0.2\\godot.sourcegenerators.4.0.2.nupkg.sha512",
-    "C:\\Users\\KRiez\\.nuget\\packages\\godotsharp\\4.0.2\\godotsharp.4.0.2.nupkg.sha512",
-    "C:\\Users\\KRiez\\.nuget\\packages\\godotsharpeditor\\4.0.2\\godotsharpeditor.4.0.2.nupkg.sha512"
+    "C:\\Users\\Kriez\\.nuget\\packages\\godot.sourcegenerators\\4.0.2\\godot.sourcegenerators.4.0.2.nupkg.sha512",
+    "C:\\Users\\Kriez\\.nuget\\packages\\godotsharp\\4.0.2\\godotsharp.4.0.2.nupkg.sha512",
+    "C:\\Users\\Kriez\\.nuget\\packages\\godotsharpeditor\\4.0.2\\godotsharpeditor.4.0.2.nupkg.sha512"
   ],
   "logs": []
 }

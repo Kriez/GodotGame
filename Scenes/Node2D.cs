@@ -19,7 +19,7 @@ public partial class Node2D : Godot.Node2D
 	private Sprite2D _demonSprite;
     Vector2 demonPosition = new Vector2(3, 5);
 
-    private List<Character> _npcs;
+    private List<Enemy> _enemies;
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
@@ -39,20 +39,23 @@ public partial class Node2D : Godot.Node2D
 		_sprite.Scale = new Vector2(squareSize / size.X, squareSize / size.Y);
 		AddChild(_sprite);
 
-        _demonSprite = new Sprite2D();
-        _demonSprite.Centered = false;
-        _demonSprite.Texture = demonResource;
-        UpdatePosition(_demonSprite, demonPosition);
-        var demonSize = _demonSprite.Texture.GetSize();
-        _demonSprite.Scale = new Vector2(squareSize / demonSize.X, squareSize / demonSize.Y);
-        AddChild(_demonSprite);
+        var enemy1 = new Enemy(demonResource, demonPosition);
+        //  AddChild(enemy1);
+        _enemies = new List<Enemy>();
+        _enemies.Add(enemy1);
+        //_demonSprite = new Sprite2D();
+        //_demonSprite.Centered = false;
+        //_demonSprite.Texture = demonResource;
+        //UpdatePosition(_demonSprite, demonPosition);
+        //var demonSize = _demonSprite.Texture.GetSize();
+        //_demonSprite.Scale = new Vector2(squareSize / demonSize.X, squareSize / demonSize.Y);
+        //AddChild(_demonSprite);
 
         //_npcs.Add(new Character(new Vector2(5, 4), demonResource, squareSize));
-        //foreach (var npc in _npcs)
-        //{
-        //    AddChild(npc.Sprite);
-        //    UpdatePosition(npc.Sprite, npc.Position);
-        //}
+        foreach (Enemy enemy in _enemies)
+        {
+            AddChild(enemy);
+        }
     }
 
     class Character
