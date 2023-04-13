@@ -8,3 +8,4 @@ export_presets.cfg
 .mono/
 data_*/
 .vs/
+/.godot/mono/temp
