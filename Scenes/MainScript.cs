@@ -16,6 +16,7 @@ public partial class MainScript : Godot.Node2D
     private Sprite2D _sprite;
 
     private List<Enemy> _enemies;
+    private RichTextLabel enemyHealth;
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
@@ -37,19 +38,18 @@ public partial class MainScript : Godot.Node2D
 
         _enemies = new List<Enemy>
         {
-            new Enemy(demonResource, new Vector2(3, 5))
+            new Enemy("Demon", demonResource, new Vector2(3, 5))
         };
-        //_demonSprite = new Sprite2D();
-        //_demonSprite.Centered = false;
-        //_demonSprite.Texture = demonResource;
-        //UpdatePosition(_demonSprite, demonPosition);
-        //var demonSize = _demonSprite.Texture.GetSize();
-        //_demonSprite.Scale = new Vector2(squareSize / demonSize.X, squareSize / demonSize.Y);
-        //AddChild(_demonSprite);
 
-        //_npcs.Add(new Character(new Vector2(5, 4), demonResource, squareSize));
+        enemyHealth = new RichTextLabel();
+        enemyHealth.Position = new Vector2(30, boardSize.Y * SquareSize + 10);
+        enemyHealth.Size = new Vector2(700, 100);
+        
+
+        AddChild(enemyHealth);
         foreach (Enemy enemy in _enemies)
         {
+            enemyHealth.Text = $"Demon {HealthStatus(enemy.Health, enemy.MaxHealth)}";
             AddChild(enemy);
         }
     }
@@ -99,7 +99,11 @@ public partial class MainScript : Godot.Node2D
                        )
                     {
                         Random rnd = new Random();
-                        _richTextLabel.Text += $"\n{DamageMessage("Player", "Demon", rnd.Next(0, 150))} ";
+                        int damage = rnd.Next(0, 150);
+                        _richTextLabel.Text += $"\n{DamageMessage("Player", "Demon", damage)} ";
+                        enemy.Health -= damage;
+                        enemyHealth.Text = $"{enemy.Name} {HealthStatus(enemy.Health, enemy.MaxHealth)}";
+
                         return;
                     }
                 }
@@ -123,11 +127,38 @@ public partial class MainScript : Godot.Node2D
                 MoveCommand(_sprite, playerPosition, MovementType.West);
                 UpdatePosition(_sprite, playerPosition);
                 break;
+            default:
+                _richTextLabel.Text += "\n";
+                _richTextLabel.Text += $"Huh?";
+                break;
+
         }
     }
     private void UpdatePosition(Sprite2D sprite, Vector2 vector2)
     {
         sprite.Position = new Vector2(vector2.X * (SquareSize + 1), vector2.Y * (SquareSize + 1));
+    }
+
+    public string HealthStatus(int health, int maxhealth)
+    {
+        var percent = (health * 100) / maxhealth;
+
+        if (percent >= 100)
+            return " is in excellent condition.";
+        else if (percent >= 90)
+            return " has a few scratches.";
+        else if (percent >= 75)
+            return " has some small wounds and bruises.";
+        else if (percent >= 50)
+            return " has quite a few wounds.";
+        else if (percent >= 30)
+            return " has some big nasty wounds and scratches.";
+        else if (percent >= 15)
+            return " looks pretty hurt.";
+        else if (percent >= 0)
+            return " is in awful condition.";
+        else
+            return " is bleeding to death.";
     }
 
     string DamageMessage(string attacker, string target, int dam)
@@ -141,11 +172,10 @@ public partial class MainScript : Godot.Node2D
 
         string vp = string.Empty;
         var damTypeTable = new string[]{
-        "punch",
-    "slice",  "stab",  "slash", "whip", "claw",
-    "blast",  "pound", "crush", "grep", "bite",
-    "pierce", "blow"
-    };
+        "punch", "slice",  "stab",  "slash", "whip", "claw",
+        "blast",  "pound", "crush", "grep", "bite",
+        "pierce", "blow"
+        };
         Random rnd = new Random();
         string vtype = damTypeTable[rnd.Next(0, damTypeTable.Length)];
 

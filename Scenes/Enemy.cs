@@ -7,12 +7,17 @@ public partial class Enemy : Godot.Node2D
 	public Vector2 _position { get; set; }
     private int squareSize = 30;
 
-	public Enemy(Texture2D texture, Vector2 position)
+	public new string Name { get; set; }
+	public int Health = 1000;
+	public int MaxHealth = 1000;
+
+	public Enemy(string name, Texture2D texture, Vector2 position)
 	{
+		Name = name;
         Sprite = new Sprite2D();
         Sprite.Texture = texture;
 		_position = position;
-		
+		 
 	}
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()

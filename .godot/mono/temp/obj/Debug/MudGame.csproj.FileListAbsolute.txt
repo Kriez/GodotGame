@@ -10,15 +10,3 @@ C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\MudGame.dll
 C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\refint\MudGame.dll
 C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\MudGame.pdb
 C:\GODOT\MUDGAME\.godot\mono\temp\obj\Debug\ref\MudGame.dll
-C:\Godot\GodotGame\.godot\mono\temp\bin\Debug\MudGame.deps.json
-C:\Godot\GodotGame\.godot\mono\temp\bin\Debug\MudGame.dll
-C:\Godot\GodotGame\.godot\mono\temp\bin\Debug\MudGame.pdb
-C:\Godot\GodotGame\.godot\mono\temp\obj\Debug\MudGame.csproj.AssemblyReference.cache
-C:\Godot\GodotGame\.godot\mono\temp\obj\Debug\MudGame.GeneratedMSBuildEditorConfig.editorconfig
-C:\Godot\GodotGame\.godot\mono\temp\obj\Debug\MudGame.AssemblyInfoInputs.cache
-C:\Godot\GodotGame\.godot\mono\temp\obj\Debug\MudGame.AssemblyInfo.cs
-C:\Godot\GodotGame\.godot\mono\temp\obj\Debug\MudGame.csproj.CoreCompileInputs.cache
-C:\Godot\GodotGame\.godot\mono\temp\obj\Debug\MudGame.dll
-C:\Godot\GodotGame\.godot\mono\temp\obj\Debug\refint\MudGame.dll
-C:\Godot\GodotGame\.godot\mono\temp\obj\Debug\MudGame.pdb
-C:\Godot\GodotGame\.godot\mono\temp\obj\Debug\ref\MudGame.dll
